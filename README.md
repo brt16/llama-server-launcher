@@ -24,5 +24,8 @@ Lightweight llama.cpp server launcher bat file with powershell windows gui for c
 ## How it works
 The `.bat` bootstrap extracts an embedded PowerShell script to a temp file, runs it, then cleans up. The PowerShell script builds a WinForms GUI entirely in memory - no extra files are created or modified on your system.
 
+## Warning
+Do not type private tokens into the GUI unless you trust your local clipboard/screen environment.
+
 ## License
 MIT
