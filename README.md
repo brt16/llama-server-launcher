@@ -1,7 +1,7 @@
 # llama-server-launcher
 Lightweight llama.cpp server launcher bat file with powershell windows gui for configuring and launching [llama-server](https://github.com/ggml-org/llama.cpp/tree/master/tools/server) (llama.cpp).
 
-![llama-server-launcher screenshot](screenshot.jpg)
+![llama-server-launcher screenshot](screenshot.JPG)
 
 ## How to use
 1. Download `llama-server-launcher.bat`.
