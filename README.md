@@ -1,5 +1,10 @@
 # llama-server-launcher
-Lightweight llama.cpp server launcher bat file with powershell windows gui for configuring and launching [llama-server](https://github.com/ggml-org/llama.cpp/tree/master/tools/server) (llama.cpp).
+Lightweight Windows `.bat` launcher with a PowerShell/WinForms GUI for configuring and launching [llama-server](https://github.com/ggml-org/llama.cpp/tree/master/tools/server) from llama.cpp.
+
+## What's new on v2.0
+- Performance improvements
+- Better functionality
+- Save command file for easy launching
 
 ![llama-server-launcher screenshot](screenshot.JPG)
 
@@ -14,7 +19,7 @@ Lightweight llama.cpp server launcher bat file with powershell windows gui for c
 ## Features
 
 - **Single file** - one `.bat` that embeds a PowerShell/WinForms GUI. Nothing to install.
-- **Two view modes** - *Basic* shows the settings most people touch; *Full* exposes the complete llama-server CLI surface.
+- **Simple two-tab workflow** - *Quick Setup* shows the settings most people touch; *All Options* exposes the complete llama-server CLI surface.
 - **Live command preview** - see the exact command line update in real time as you change options.
 - **Copy or Run** - copy the built command to your clipboard, or launch llama-server directly from the GUI.
 - **Auto-detection** - if the launcher sits next to `llama-server.exe`, the path fills in automatically.
@@ -22,7 +27,7 @@ Lightweight llama.cpp server launcher bat file with powershell windows gui for c
 - **Searchable option index** - the *All Options* tab lets you search across every flag and jump to it.
 
 ## How it works
-The `.bat` bootstrap extracts an embedded PowerShell script to a temp file, runs it, then cleans up. The PowerShell script builds a WinForms GUI entirely in memory - no extra files are created or modified on your system.
+The `.bat` bootstrap reads the embedded PowerShell script from itself and runs it in memory. The PowerShell script builds the WinForms GUI entirely in memory - no install and no extra files are created, except an error log in `%TEMP%` if startup fails.
 
 ## Warning
 Do not type private tokens into the GUI unless you trust your local clipboard/screen environment.
