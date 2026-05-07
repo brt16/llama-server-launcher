@@ -5,6 +5,7 @@ Lightweight Windows `.bat` launcher with a PowerShell/WinForms GUI for configuri
 - Performance improvements
 - Better functionality
 - Save command file for easy launching
+- Presets for quick setup
 
 ![llama-server-launcher screenshot](screenshot.JPG)
 
